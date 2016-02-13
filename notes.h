@@ -1,3 +1,4 @@
+#define REST    0.0
 #define C0      16.35
 #define Db0     17.32
 #define D0      18.35
