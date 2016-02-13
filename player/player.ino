@@ -28,11 +28,12 @@ void square_wave(float freq, float duration){
 }
 
 void play_melody(float melody[][2], size_t size_of_melody) {
-    for (int i = 0; i < size_of_melody / sizeof(float) * 2; i++) {
+    for (int i = 0; i < size_of_melody / (sizeof(float) * 2); i++) {
         square_wave(melody[i][0], melody[i][1]);
     }
 }
 
 void loop() {
-  play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
+  // play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
+  play_melody(buddy_holly, sizeof(buddy_holly));
 }
