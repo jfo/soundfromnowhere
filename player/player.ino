@@ -1,3 +1,14 @@
+int tempo = 80;
+
+#define QUARTER  15000.0 / tempo
+#define DOTTEDQUARTER  (QUARTER * 1.5)
+#define EIGHTH  (QUARTER / 2)
+#define DOTTEDEIGHTH  (EIGHTH * 1.5)
+#define SIXTEENTH  (EIGHTH / 2)
+#define HALF  (QUARTER * 2)
+#define DOTTEDHALF  (QUARTER * 3)
+#define WHOLE  (QUARTER * 4)
+
 #include "notes.h"
 #include "melodies.h"
 
@@ -34,6 +45,9 @@ void play_melody(float melody[][2], size_t size_of_melody) {
 }
 
 void loop() {
-  // play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
+  play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
+  delay(1000);
   play_melody(buddy_holly, sizeof(buddy_holly));
+  delay(1000);
+  tempo = 160;
 }
