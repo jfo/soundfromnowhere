@@ -1,3 +1,5 @@
+enum durs = { EIGHTH, QUARTER, HALF, WHOLE }
+
 #define _REST    0.0
 #define _C0      16.35
 #define _Db0     17.32

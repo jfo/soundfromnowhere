@@ -34,6 +34,6 @@ void play_melody(float melody[][2], size_t size_of_melody) {
 }
 
 void loop() {
-  // play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
-  play_melody(buddy_holly, sizeof(buddy_holly));
+  play_melody(my_bonnie_lies_over_the_ocean, sizeof(my_bonnie_lies_over_the_ocean));
+  // play_melody(buddy_holly, sizeof(buddy_holly));
 }
