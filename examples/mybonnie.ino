@@ -26,7 +26,7 @@ void square_wave(float freq, float duration){
     }
 }
 
-void play_melody(float melody[][2], size_t size_of_melody) {
+void play_melody(float melody[][2]) {
     for (int i = 0; i < size_of_melody / sizeof(float) * 2; i++) {
         square_wave(melody[i][0], melody[i][1]);
     }
